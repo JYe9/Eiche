@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkeiche=self.webpackChunkeiche||[]).push([[2273],{9602:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/Eiche/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

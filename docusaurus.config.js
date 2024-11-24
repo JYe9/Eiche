@@ -80,12 +80,12 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Novels',
-          },
+          // {
+          //   type: 'docSidebar',
+          //   sidebarId: 'tutorialSidebar',
+          //   position: 'left',
+          //   label: 'Novels',
+          // },
           {
             type: 'localeDropdown',
             position: 'right',
@@ -96,6 +96,18 @@ const config = {
           //   label: 'GitHub',
           //   position: 'right',
           // },
+          {
+            label: '其实并不是规范的爱情',
+            to: 'docs/novel1/chapter1',
+          },
+          {
+            label: '遇匪',
+            to: 'docs/novel2/chapter1',
+          },
+          {
+            label: '书架',
+            to: '/bookshelf',
+          },
         ],
       },
       footer: {
@@ -105,8 +117,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Novels',
-                to: '/docs/intro',
+                label: 'Book Shelf',
+                to: '/bookshelf',
               },
             ],
           },

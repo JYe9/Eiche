@@ -1,5 +1,9 @@
 ---
-sidebar_position: 2
+id: chapter1
+title: 第一章 其实并不是初遇
+sidebar_label: 第一章 其实并不是初遇
+sidebar_position: 1
+sidebar: novel1Sidebar    # 指定使用第一本小说的 sidebar
 ---
 
 # 第一章 其实并不是初遇

@@ -1,5 +1,9 @@
 ---
+id: chapter2
+title: 第二章 其实并不是分别
+sidebar_label: 第二章 其实并不是分别
 sidebar_position: 2
+sidebar: novel2Sidebar    # 指定使用第二本小说的 sidebar
 ---
 
 # 第二章 其实并不是分别

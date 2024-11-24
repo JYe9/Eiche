@@ -1,5 +1,9 @@
 ---
+id: intro
+title: 作品简介
+sidebar_label: 简介
 sidebar_position: 1
+sidebar: novel1Sidebar
 ---
 
 # 其实并不是规范的爱情

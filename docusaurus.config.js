@@ -97,16 +97,16 @@ const config = {
           //   position: 'right',
           // },
           {
+            label: '书架',
+            to: '/bookshelf',
+          },
+          {
             label: '其实并不是规范的爱情',
-            to: 'docs/novel1/chapter1',
+            to: 'docs/novel1/intro',
           },
           {
             label: '遇匪',
-            to: 'docs/novel2/chapter1',
-          },
-          {
-            label: '书架',
-            to: '/bookshelf',
+            to: 'docs/novel2/intro',
           },
         ],
       },

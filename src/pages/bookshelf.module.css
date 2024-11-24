@@ -4,48 +4,90 @@
   margin: 0 auto;
 }
 
+.pageTitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--ifm-color-primary);
+}
+
 .bookGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  margin-top: 2rem;
+  padding: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .bookGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .bookGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .bookGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .bookCard {
-  border: 1px solid #eee;
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.2s;
-  background: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+  max-width: 250px;
+  margin: 0 auto;
 }
 
 .bookCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
 }
 
 .bookLink {
   text-decoration: none;
   color: inherit;
-  display: block;
-  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.coverWrapper {
+  width: 200px;
+  height: 300px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+  background-color: #f0f0f0;
+}
+
+.bookCard:hover .coverWrapper {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .bookCover {
   width: 100%;
-  height: 300px;
+  height: 100%;
   object-fit: cover;
-  border-radius: 4px;
+  transition: transform 0.3s ease;
+  display: block;
 }
 
-.bookCard h2 {
-  margin: 1rem 0 0.5rem;
-  font-size: 1.25rem;
+.bookCard:hover .bookCover {
+  transform: scale(1.05);
 }
 
-.bookCard p {
-  color: #666;
-  font-size: 0.9rem;
-  margin: 0;
+.bookTitle {
+  margin: 0.5rem 0;
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--ifm-color-primary);
 }

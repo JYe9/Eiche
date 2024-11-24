@@ -2,7 +2,7 @@
 id: chapter1
 title: 第一章 高温
 sidebar_label: 第一章 高温
-sidebar_position: 1
+sidebar_position: 2
 sidebar: novel2Sidebar    # 指定使用第二本小说的 sidebar
 ---
 
